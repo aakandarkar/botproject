@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<html>
+  <head>
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"
+    ></script>
+    <link rel="stylesheet" href="assets/css/chatbubble.css">
+  </head>
+
+  <body>
+
+  <div id="webchat" role="main">
+    <script>
+      window.WebChat.renderWebChat(
+        {
+          directLine: window.WebChat.createDirectLine({
+            token: 'FXv0z2Qx3kY._ELspfqFqLia9a4sFXcHnxjF_S0jfqpk9Pf-swfJioY'
+          }),
+          userID: 'aakandar@syr.edu',
+          username: 'Web Chat User',
+          locale: 'en-US'
+        },
+        document.getElementById('webchat')
+      );
+    </script>
+    </div>
+  </body>
 </html>

@@ -1,115 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<body>
 <head>
     	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>Meyawo Landing page | Free Bootstrap 4.3.x landing page</title>
-    <!-- font icons -->
+    <title>'Cuse Chat Bot</title>
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
+
 	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="assets/css/chatbubble.css">
+
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" >
-
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">iSchool</a>
-
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-
-            </a>
-        </div>
-    </nav><!-- End of Page Navbar -->
-
-
-<iframe src='https://webchat.botframework.com/embed/cloud-project-qna-bot?s=FXv0z2Qx3kY._ELspfqFqLia9a4sFXcHnxjF_S0jfqpk9Pf-swfJioY'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
 <div class='container' ng-cloak ng-app="chatApp">
-  <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
-    <div class='chatbox__user-list'>
-      <h1>User list</h1>
-      <div class='chatbox__user--active'>
-        <p>Jack Thomson</p>
-      </div>
-      <div class='chatbox__user--busy'>
-        <p>Angelina Jolie</p>
-      </div>
-      <div class='chatbox__user--active'>
-        <p>George Clooney</p>
-      </div>
-      <div class='chatbox__user--active'>
-        <p>Seth Rogen</p>
-      </div>
-      <div class='chatbox__user--away'>
-        <p>John Lydon</p>
-      </div>
-    </div>
-    <div class="chatbox__messages" ng-repeat="message in messages">
-      <div class="chatbox__messages__user-message">
-        <div class="chatbox__messages__user-message--ind-message">
-          <p class="name">{{message.Name}}</p>
-          <br/>
-          <p class="message">{{message.Message}}</p>
-        </div>
-      </div>
-    </div>
-    <form>
-      <input type="text" placeholder="Enter your message">
-    </form>
-  </div>
+    <h1>Chat with our 'Cuse Bot</h1>
+    <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
 
-
- <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+                <div class="chatbox__messages__user-message--ind-message">
+                    <iframe src='https://webchat.botframework.com/embed/cloud-project-qna-bot?s=FXv0z2Qx3kY._ELspfqFqLia9a4sFXcHnxjF_S0jfqpk9Pf-swfJioY' style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+                </div>
+    </div>
+</div>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="assets/js/meyawo.js"></script>
+    <script src="assets/js/chatbubble.js"></script>
+
 </body>
 </html>
 
 
-
-	<div class="bubbleWrapper">
-		<div class="inlineContainer">
-			<img class="inlineIcon" src="https://banner2.cleanpng.com/20180626/ppw/kisspng-syracuse-university-syracuse-orange-men-s-basketba-5b330975e6ba89.4555728415300714139451.jpg">
-			<div class="otherBubble other">
-				No ninjas!
-			</div>
-		</div><span class="other">08:41</span>
-	</div>
-	<div class="bubbleWrapper">
-		<div class="inlineContainer own">
-			<img class="inlineIcon" src="https://img.freepik.com/free-vector/illustration-graduation-hat_53876-5920.jpg">
-			<div class="ownBubble own">
-			 The first rule of being a ninja is, 'Do no harm.'
-			</div>
-		</div><span class="own">08:55</span>
-	</div>
-	<div class="bubbleWrapper">
-		<div class="inlineContainer">
-			<img class="inlineIcon" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
-			<div class="otherBubble other">
-				Knowing when to leave requires training.
-			</div>
-		</div>
-	</div><span class="other">10:13</span>
-	<div class="bubbleWrapper">
-		<div class="inlineContainer own">
-			<img class="inlineIcon" src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png">
-			<div class="ownBubble own">
-			Stunned but impressed.
-			</div>
-		</div><span class="own">11:07</span>
-	</div>
-	<div class="bubbleWrapper">
-		<div class="inlineContainer">
-			<img class="inlineIcon" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
-			<div class="otherBubble other">
-				How about throwing stars?
-			</div>
-		</div><span class="other">11:11</span>
-	</div>
