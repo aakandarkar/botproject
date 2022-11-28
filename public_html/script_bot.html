@@ -1,17 +1,55 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--  <head>-->
+<!--    <script-->
+<!--      crossorigin="anonymous"-->
+<!--      src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"-->
+<!--    ></script>-->
+<!--    <link rel="stylesheet" href="assets/css/chatbubble.css">-->
+<!--  </head>-->
+<!--  <body>-->
+
+<!--  <div id="webchat" role="main"></div>-->
+<!--    <script>-->
+<!--      window.WebChat.renderWebChat(-->
+<!--        {-->
+<!--          directLine: window.WebChat.createDirectLine({-->
+<!--            token: 'FXv0z2Qx3kY._ELspfqFqLia9a4sFXcHnxjF_S0jfqpk9Pf-swfJioY'-->
+<!--          }),-->
+<!--          userID: 'aakandar@syr.edu',-->
+<!--          username: 'Web Chat User',-->
+<!--          locale: 'en-US'-->
+<!--        },-->
+<!--        document.getElementById('webchat')-->
+<!--      );-->
+<!--    </script>-->
+<!--  </body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <script
-      crossorigin="anonymous"
-      src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"
-    ></script>
+<html lang="en">
+<body>
+<head>
+    	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>'Cuse Chat Bot</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+	<link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="stylesheet" href="assets/css/chatbubble.css">
-  </head>
-
-  <body>
-
-  <div id="webchat" role="main">
-    <script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/meyawo.js"></script>
+    <script src="assets/js/chatbubble.js"></script>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+</head>
+<div class='container' ng-cloak ng-app="chatApp">
+    <h1>Chat with our 'Cuse Bot</h1>
+  <div id="webchat" role="main"></div>
+  <script>
       window.WebChat.renderWebChat(
         {
           directLine: window.WebChat.createDirectLine({
@@ -24,6 +62,9 @@
         document.getElementById('webchat')
       );
     </script>
-    </div>
-  </body>
+</div>
+
+</body>
 </html>
+
+
